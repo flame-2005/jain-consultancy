@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes typewriter {
+    0% {
+      width: 0;
+    }
+    25% {
+      width: 100%;
+    }
+    50% {
+      width: 100%;
+    }
+    75% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+@keyframes typewriter2{
+  0% {
+    width: 100%;
+  }
+  25% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  75% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+
+  }
+
+  .typewriter{
+    overflow: hidden; /* Ensures the text is initially hidden */
+    border-right: 0.15em solid orange; /* Cursor effect */
+    white-space: nowrap; /* Prevents text from wrapping */
+    margin: 0 auto; /* Centers the text */
+    font-size: 1.5em; /* Adjust the font size as needed */
+    animation: typewriter 10s steps(30) infinite; /* Adjust the duration and steps as needed */
+  }
+  .typewriter2{
+    overflow: hidden; /* Ensures the text is initially hidden */
+    border-right: 0.15em solid orange; /* Cursor effect */
+    white-space: nowrap; /* Prevents text from wrapping */
+    margin: 0 auto; /* Centers the text */
+    font-size: 1.5em; /* Adjust the font size as needed */
+    animation: typewriter 8s steps(26) infinite; /* Adjust the duration and steps as needed */
+  }
+ 
