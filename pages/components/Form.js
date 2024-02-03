@@ -39,28 +39,28 @@ const test = () => {
   ];
 
   const [marks, setMarks] = useState('');
-    const [predictedPercentile, setPredictedPercentile] = useState(null);
-  
-    const handleMarksChange = (e) => {
-      setMarks(e.target.value);
-    };
-  
-    const predictPercentile = () => {
-      const userMarks = parseInt(marks);
-  
-      for (const percentileData of jeeMainPercentiles) {
-        const [minMarks, maxMarks] = percentileData.marksRange.split(' – ').map(Number);
-  
-        if (userMarks >= minMarks && (userMarks <= maxMarks || maxMarks === undefined)) {
-          setPredictedPercentile(percentileData.percentileRange);
-          return;
-        }
-      }
-  
-      setPredictedPercentile('Marks out of range');
-    };
+  const [predictedPercentile, setPredictedPercentile] = useState(null);
 
-    
+  const handleMarksChange = (e) => {
+    setMarks(e.target.value);
+  };
+
+  const predictPercentile = () => {
+    const userMarks = parseInt(marks);
+
+    for (const percentileData of jeeMainPercentiles) {
+      const [minMarks, maxMarks] = percentileData.marksRange.split(' – ').map(Number);
+
+      if (userMarks >= minMarks && (userMarks <= maxMarks || maxMarks === undefined)) {
+        setPredictedPercentile(percentileData.percentileRange);
+        return;
+      }
+    }
+
+    setPredictedPercentile('Marks out of range');
+  };
+
+
   const router = useRouter();
   const [formData, setFormData] = useState({
     name: '',
@@ -68,8 +68,8 @@ const test = () => {
     marks: '',
     preparing_for: "",
     number: "",
-    preffered_collage:'',
-    message:""
+    preffered_collage: '',
+    message: ""
 
   });
   console.log(formData)
@@ -103,10 +103,10 @@ const test = () => {
           number: '',
           marks: '',
           preffered_collage: '',
-          message:'',
-          preparing_for:''
-})
-console.log(predictedPercentile)
+          message: '',
+          preparing_for: ''
+        })
+        console.log(predictedPercentile)
         router.push('/');
         // alert({predictedPercentile})
         // Handle success, show a success message, redirect, etc.
@@ -121,66 +121,66 @@ console.log(predictedPercentile)
   };
   return (
     <div>
-     <section class="text-gray-600 body-font">
-  <div class="container px-5 py-16 mx-auto flex flex-wrap">
-    <form className='md:flex' onSubmit={handleSubmit} method="post">
-    <div class="md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-      <h1 class="title-font font-medium text-2xl md:text-3xl lg:text-4xl text-gray-900 mb-4">Free Consultation Available</h1>
-      <p class="leading-relaxed text-base md:text-lg">Begin with a one-on-one session to assess your child's academic profile and aspirations, setting the stage for tailored college guidance.</p>
-      <div className='mt-3'>
+      <section class="text-gray-600 body-font" id='contact'>
+        <div class="container px-5 py-16 mx-auto flex flex-wrap">
+          <form className='md:flex' onSubmit={handleSubmit} method="post">
+            <div class="md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+              <h1 class="title-font font-medium text-2xl md:text-3xl lg:text-4xl text-gray-900 mb-4">First Consultation On Us</h1>
+              <p class="leading-relaxed text-base md:text-lg">Begin with a one-to-one session with our expert counsellor to assess your academic profile and aspirations, setting the stage for tailored college guidance.</p>
+              <div className='mt-3'>
 
-      <div className='flex mb-2'>
-    <div></div>
-    <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1705430541/Arrow---Right-Circle_bsod5k.png" className='mr-2' alt="" /><span>
-    Next Steps Guidance
-    </span>
-      </div>
-      </div>
-      <div className='flex mb-2'>
+                <div className='flex mb-2'>
+                  <div></div>
+                  <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1705430541/Arrow---Right-Circle_bsod5k.png" className='mr-2' alt="" /><span>
+                    Next Steps Guidance
+                  </span>
+                </div>
+              </div>
+              <div className='flex mb-2'>
 
-    <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1705430541/Arrow---Right-Circle_bsod5k.png" className='mr-2' alt="" /><span>
-    Expert Advice
-    </span>
-      </div>
-      <div className='flex'>
+                <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1705430541/Arrow---Right-Circle_bsod5k.png" className='mr-2' alt="" /><span>
+                  Expert Advice
+                </span>
+              </div>
+              <div className='flex'>
 
-    <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1705430541/Arrow---Right-Circle_bsod5k.png" className='mr-2' alt="" /><span>
-    Custom Plan Outline
-    </span>
-      </div>
-   
-    </div>
-    <div class="lg:w-1/3 md:w-1/2 bg-gray-100 rounded-xl p-8 shadow-2xl md:ml-auto mt-10 md:mt-0">
-      <h2 class="text-gray-900 text-lg md:text-xl lg:text-2xl font-medium title-font mb-4">Predict Percentile</h2>
-      <div class="flex flex-wrap -m-2">
-        <div class="p-2 w-full">
-          <label for="full-name" class="leading-7 text-gray-600">Full Name</label>
-          <input type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-        </div>
-        <div class="p-2 w-full">
-          <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-          <input type="text"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-        </div>
-        <div class="p-2 md:w-1/2 w-full">
-          <label for="phone" class="leading-7 text-sm text-gray-600">Phone Number</label>
-          <input type="text"
-                  id="number"
-                  name="number"
-                  value={formData.number}
-                  onChange={handleChange}
-                  required class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-        </div>
-        <div class="p-2 md:w-1/2 w-full">
+                <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1705430541/Arrow---Right-Circle_bsod5k.png" className='mr-2' alt="" /><span>
+                  Custom Collage plan
+                </span>
+              </div>
+
+            </div>
+            <div class="lg:w-1/3 md:w-1/2 bg-gray-100 rounded-xl p-8 shadow-2xl md:ml-auto mt-10 md:mt-0">
+              <h2 class="text-gray-900 text-lg md:text-xl lg:text-2xl font-medium title-font mb-4">Lets get in touch!!</h2>
+              <div class="flex flex-wrap -m-2">
+                <div class="p-2 w-full">
+                  <label for="full-name" class="leading-7 text-gray-600">Full Name</label>
+                  <input type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                </div>
+                <div class="p-2 w-full">
+                  <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                  <input type="text"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                </div>
+                <div class="p-2 w-full">
+                  <label for="phone" class="leading-7 text-sm text-gray-600">Phone Number</label>
+                  <input type="text"
+                    id="number"
+                    name="number"
+                    value={formData.number}
+                    onChange={handleChange}
+                    required class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                </div>
+                {/* <div class="p-2 md:w-1/2 w-full">
           <label for="marks" class="leading-7 text-sm text-gray-600">Marks Expecting</label>
           <input type="text"
                   id="marks"
@@ -188,86 +188,94 @@ console.log(predictedPercentile)
                   value={formData.marks}
                   onChange={handleChange}
                   required class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-        </div>
-        <div class="p-2 w-full">
-          <label for="preparing-for" class="leading-7 text-sm text-gray-600">Preparing For</label>
-          <input type="text"
-                  id="preparing_for"
-                  name="preparing_for"
-                  value={formData.preparing_for}
-                  onChange={handleChange}
-                  required class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-        </div>
-        <div class="p-2 w-full">
-          <label for="preferred-college" class="leading-7 text-sm text-gray-600">Preferred College</label>
-          <input type="text"
-                  id="preffered_collage"
-                  name="preffered_collage"
-                  value={formData.preffered_collage}
-                  onChange={handleChange}
-                  required class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-        </div>
-        <div class="p-2 w-full">
-          <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-          <textarea type="text"
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out resize-none"></textarea>
-        </div>
-        <div class="p-2 w-full">
-          {/* <button type="submit" onClick={predictPercentile} class="text-white bg-blue-900 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Predict my Precentile</button> */}
-          <div className="" x-data="{ open: false }">
-          <button
-            type='submit'
-            className="text-white bg-blue-900 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-            onClick={() => {setOpen(true),predictPercentile()}}
-          >
-            Predict Percentile
-          </button>
-          {open && (
-            <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full" style={{ backgroundColor: 'rgba(0,0,0,.5)' }}>
-              <div className="relative mx-4 overflow-hidden text-left transition-all transform bg-white rounded-lg shadow-xl dabg-gray-900 sm:my-8 sm:max-w-lg sm:w-full">
-                <div className="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                  <div className="sm:flex sm:items-start">
-                    <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto bg-blue-100 rounded-full dabg-blue-400 sm:mx-0 sm:h-10 sm:w-10">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-5 h-5 text-blue-600 datext-gray-100 bi bi-exclamation-triangle" viewBox="0 0 16 16">
-                        <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z" />
-                        <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z" />
-                      </svg>
-                    </div>
-                    <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                      <h2 className="text-lg font-medium leading-6 text-gray-900 datext-gray-300">
-                       Your Predict Percentile is {predictedPercentile}
-                      </h2>
-                      {/* <div className="mt-2">
+        </div> */}
+                <div class="p-2 w-full">
+                  <label for="preparing-for" class="leading-7 text-sm text-gray-600">Preparing For</label>
+                  <input type="text"
+                    id="preparing_for"
+                    name="preparing_for"
+                    value={formData.preparing_for}
+                    onChange={handleChange}
+                    required class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                </div>
+                <div class="p-2 w-full">
+                  <label for="preparing-for" class="leading-7 text-sm text-gray-600">Educational Level</label>
+                  <select
+                    id="preffered_collage"
+                    name="preffered_collage"
+                    value={formData.preffered_collage}
+                    onChange={handleChange}
+                    required
+                    class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  >
+                    <option value="select">Select</option>
+                    <option value="X">X</option>
+                    <option value="XII">XII</option>
+                    <option value="gratuated">Gratuated</option>
+                  </select>
+                </div>
+
+                <div class="p-2 w-full">
+                  <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                  <textarea type="text"
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    required class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out resize-none"></textarea>
+                </div>
+                <div class="p-2 w-full">
+                  {/* <button type="submit" onClick={predictPercentile} class="text-white bg-blue-900 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Predict my Precentile</button> */}
+                  <div className="" x-data="{ open: false }">
+                    <button
+                      type='submit'
+                      className="text-white bg-blue-900 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                      onClick={() => setOpen(true)}
+                    >
+                      Lets Connect
+                    </button>
+                    {open && (
+                      <div className="fixed top-0 left-0 flex items-center justify-center w-full h-full" style={{ backgroundColor: 'rgba(0,0,0,.5)' }}>
+                        <div className="relative mx-4 overflow-hidden text-left transition-all transform bg-white rounded-lg shadow-xl dabg-gray-900 sm:my-8 sm:max-w-lg sm:w-full">
+                          <div className="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                            <div className="sm:flex sm:items-start">
+                              <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto bg-blue-100 rounded-full dabg-blue-400 sm:mx-0 sm:h-10 sm:w-10">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="w-5 h-5 text-blue-600 datext-gray-100 bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                                  <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z" />
+                                  <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z" />
+                                </svg>
+                              </div>
+                              <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                                <h2 className="text-lg font-medium leading-6 text-gray-900 datext-gray-300">
+                                  Our dedicated counselors will be reaching out to you shortly. Get ready for an engaging conversation that will inspire and guide you towards your goals!
+                                </h2>
+                                {/* <div className="mt-2">
                         <p className="text-sm text-gray-500 datext-gray-400">
                           Are you sure you want to deactivate your account? All of your data will be permanently removed. This action cannot be undone.
                         </p>
                       </div> */}
-                    </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className="px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                            <button
+                              onClick={() => setOpen(false)}
+                              className="px-4 py-2 text-blue-500 border border-blue-500 rounded-md select-none dark:hover:text-gray-50  hover:text-gray-100 focus:outline-none focus:ring-2 dark:focus:ring-0 focus:ring-offset-2 dark:focus:ring-offset-0  focus:ring-blue-600 hover:bg-blue-600"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
-                <div className="px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                  <button
-                    onClick={() => setOpen(false)}
-                    className="px-4 py-2 text-blue-500 border border-blue-500 rounded-md select-none dark:hover:text-gray-50  hover:text-gray-100 focus:outline-none focus:ring-2 dark:focus:ring-0 focus:ring-offset-2 dark:focus:ring-offset-0  focus:ring-blue-600 hover:bg-blue-600"
-                  >
-                    Close
-                  </button>
-                </div>
+                {/* <p class="text-xs text-gray-500 mt-3 w-full">Literally you probably haven't heard of them jean shorts.</p> */}
               </div>
             </div>
-          )}
+          </form>
         </div>
-        </div>
-        <p class="text-xs text-gray-500 mt-3 w-full">Literally you probably haven't heard of them jean shorts.</p>
-      </div>
-    </div>
-    </form>
-  </div>
-</section>
+      </section>
 
 
     </div>

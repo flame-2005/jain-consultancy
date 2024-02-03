@@ -1,4 +1,5 @@
 // components/Navbar.js
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 const Navbar = () => {
@@ -46,24 +47,29 @@ const Navbar = () => {
 
           <ul className="hidden lg:w-auto lg:space-x-12 lg:items-center lg:flex">
             <li>
-              <a href="#" className="text-l font-bold text-gray-700 hover:text-blue-700">
+              <Link href="/#about" className="text-l font-bold text-gray-700 hover:text-blue-700">
                 About us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#"className="text-l font-bold text-gray-700 hover:text-blue-700">
-                Our cources
-              </a>
+              <Link href="/#collages"className="text-l font-bold text-gray-700 hover:text-blue-700">
+                Our Collages
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-l font-bold text-gray-700 hover:text-blue-700">
+              <Link href="/blogs" className="text-l font-bold text-gray-700 hover:text-blue-700">
                 Blog
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="text-l font-bold  text-gray-700 hover:text-blue-700">
+              <Link href="/percentilepredictor" className="text-l font-bold text-gray-700 hover:text-blue-700">
+                Rank Predictor
+              </Link>
+            </li>
+            <li>
+              <Link href="/#contact" className="text-l font-bold  text-gray-700 hover:text-blue-700">
                 Contact Us
-              </a>
+              </Link>
             </li>
             
           </ul>
@@ -120,28 +126,28 @@ const Navbar = () => {
           </div>
           <ul className="px-4 text-left mt-7">
             <li class="pb-3">
-              <a href="#" class="text-sm text-gray-700 hover:text-blue-400">
+              <Link href="/" class="text-sm text-gray-700 hover:text-blue-400">
                 Home
-              </a>
+              </Link>
             </li>
             <li class="pb-3">
-              <a href="#" class="text-sm text-gray-700 hover:text-blue-400">
+              <Link href="/#about" class="text-sm text-gray-700 hover:text-blue-400">
                 About us
-              </a>
+              </Link>
             </li>
             <li class="pb-3">
-              <a href="#" class="text-sm text-gray-700 hover:text-blue-400">
-                Features
-              </a>
+              <Link href="/#contact" class="text-sm text-gray-700 hover:text-blue-400">
+                Contact Us
+              </Link>
             </li>
             <li class="pb-3">
-              <a href="#" class="text-sm text-gray-700 hover:text-blue-400">
+              <Link href="/#blogs" class="text-sm text-gray-700 hover:text-blue-400">
                 Blog
-              </a>
+              </Link>
             </li>
             <li class="pb-3">
-              <a href="#" class="text-sm text-gray-700 hover:text-blue-400">
-                Testimonials
+              <a href="/percentilepredictor" class="text-sm text-gray-700 hover:text-blue-400">
+                Rank Predictor
               </a>
             </li>
           </ul>

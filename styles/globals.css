@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+*{
+  scroll-behavior: smooth;
+}
 @keyframes typewriter {
     0% {
       width: 0;
@@ -38,6 +40,7 @@
   }
 
   }
+
 
   .typewriter{
     overflow: hidden; /* Ensures the text is initially hidden */

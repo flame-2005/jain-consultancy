@@ -2,6 +2,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Faqs from './components/Faqs'
 import Form from './components/Form'
+import Link from 'next/link'
+import { FaArrowAltCircleUp } from "react-icons/fa";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -9,6 +11,7 @@ export default function Home() {
     return (
         <>
             <div>
+            <Link href={'/'} type="button" class="z-[100] md:hidden fixed bottom-5 right-10 text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2 text-4xl"><FaArrowAltCircleUp /></Link>
                 <div>
                     <section class=" relative overflow-hidden mt-10">
                         <div class="relative flex items-center justify-center w-full text-center bg-center bg-cover"
@@ -18,14 +21,16 @@ export default function Home() {
                                     <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1705211261/Polygon_4_dfcfhw.png" className='absolute -z-10 right-10' alt="" />
                                     <div class="text-center max-w-5xl">
                                         <h2 class="py-5 typewriter text-2xl font-bold leading-10 tracking-tight md:text-6xl ">
-                                            Empowering Your Child's Future 
-                                            
+                                            Empower Your Future
+
                                         </h2>
                                         <h2 class="py-5 typewriter2 text-2xl font-bold leading-10 tracking-tight md:text-6xl ">
-                                        Navigating College Choices 
-                                            
+                                            Miracles by our Mentors
+
+
+
                                         </h2>
-                                        
+
                                         {/* <br className='my-5'/> Navigating College Choices */}
 
                                         <div class="flex flex-wrap justify-center items-center md:mt-20">
@@ -34,13 +39,13 @@ export default function Home() {
                                                     href="#"
                                                     className="inline-block h-fit px-4 py-3 mr-2 text-xs font-semibold leading-none text-gray-100 bg-blue-800 border border-blue-200 rounded hover:border-blue-400 hover:bg-blue-400"
                                                 >
-                                                    Book a free consultancy
+                                                    Book a free Session
                                                 </a>
                                                 <a
                                                     href="#"
                                                     className="inline-block h-fit px-4 py-3 mr-2 text-xs font-semibold leading-none text-blue-600 border border-blue-400 rounded hover:border-blue-300"
                                                 >
-                                                    Learn more about us
+                                                    Learn more
                                                 </a>
 
 
@@ -58,89 +63,43 @@ export default function Home() {
                         </div>
 
                     </section>
-                <Form/>
+                    <Form />
 
                     <section class="flex items-center bg-stone-100 font-poppins">
                         <div class="justify-center flex-1 py-6 mx-auto max-w-8xl overflow-hidden lg:py-4">
                             <div class="text-center mb-14">
                                 <span
                                     class="block mb-4 text-xs font-semibold leading-4 tracking-widest text-center text-blue-500 uppercase ">
-                                    Team
+                                    Alumani network spanning over 30+ colleges
                                 </span>
-                                <h1 class="text-3xl font-bold capitalize "> Meet Our Wonderful Team </h1>
+                                <h1 class="text-3xl font-bold capitalize ">Notable colleges</h1>
                             </div>
                             <div class="flex flex-wrap justify-center ">
 
                                 <div class="w-full border-black p-2 rounded-xl shadow-xl px-4 mb-10 sm:w-1/2 lg:w-1/3 xl:w-1/6 md:mr-2 mx-10 md:mx-0">
                                     <div class="mx-auto text-center ">
                                         <div
-                                            class="inline-block mb-3 overflow-hidden text-xs text-white bg-blue-700 rounded-full w-44 h-44 sm:w-44 sm:h-44">
+                                            class="inline-block mb-3 overflow-hidden text-xs text-white rounded-full w-44 h-44 sm:w-44 sm:h-44">
                                             <img class="object-cover w-full h-full transition-all hover:scale-110"
-                                                src="https://i.postimg.cc/q7pv50zT/pexels-edmond-dant-s-4342352.jpg" alt="" />
+                                                src="https://res.cloudinary.com/dtyombve3/image/upload/v1706962124/download_3_hvdxre.png" alt="" />
                                         </div>
-                                        <h2 class="mb-2 text-xl font-semibold text-gray-800 ">Shree Kimson</h2>
-                                        <span class="inline-block mb-6 text-base font-medium text-blue-500 ">Manager
+                                        <h2 class="mb-2 text-xl font-semibold text-gray-800 ">NMIMS</h2>
+                                        <span class="inline-block mb-6 text-base font-medium text-blue-500 ">BBA
                                         </span>
-                                        <div class="flex items-center justify-center">
-                                            <a class="inline-block mr-5 text-coolGray-300 hover:text-coolGray-400" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="w-6 h-6 text-blue-800 bi bi-facebook " viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                </svg>
-                                            </a>
-                                            <a class="inline-block mr-5 text-coolGray-300 hover:text-coolGray-400" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="w-6 h-6 text-blue-500  bi bi-twitter" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                </svg>
-                                            </a>
-                                            <a class="inline-block text-coolGray-300 hover:text-coolGray-400" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="w-6 h-6 text-pink-600  bi bi-instagram"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                                                </svg>
-                                            </a>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <div class="w-full border-black p-2 rounded-xl shadow-xl px-4 mb-10 sm:w-1/2 lg:w-1/3 xl:w-1/6 md:mr-2 mx-10 md:mx-0">
                                     <div class="mx-auto text-center ">
                                         <div
-                                            class="inline-block mb-3 overflow-hidden text-xs text-white bg-blue-700 rounded-full w-44 h-44 sm:w-44 sm:h-44">
+                                            class="inline-block mb-3 overflow-hidden text-xs text-white rounded-full w-44 h-44 sm:w-44 sm:h-44">
                                             <img class="object-cover w-full h-full transition-all hover:scale-110"
-                                                src="https://i.postimg.cc/q7pv50zT/pexels-edmond-dant-s-4342352.jpg" alt="" />
+                                                src="https://res.cloudinary.com/dtyombve3/image/upload/v1706348599/National_Institute_of_Technology_Trichy_Logo_ptqdn6.png" alt="" />
                                         </div>
-                                        <h2 class="mb-2 text-xl font-semibold text-gray-800 ">Shree Kimson</h2>
-                                        <span class="inline-block mb-6 text-base font-medium text-blue-500 ">Manager
+                                        <h2 class="mb-2 text-xl font-semibold text-gray-800 ">IIM Bangalore</h2>
+                                        <span class="inline-block mb-6 text-base font-medium text-blue-500 ">MBA
                                         </span>
-                                        <div class="flex items-center justify-center">
-                                            <a class="inline-block mr-5 text-coolGray-300 hover:text-coolGray-400" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="w-6 h-6 text-blue-800 bi bi-facebook " viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                </svg>
-                                            </a>
-                                            <a class="inline-block mr-5 text-coolGray-300 hover:text-coolGray-400" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="w-6 h-6 text-blue-500  bi bi-twitter" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                </svg>
-                                            </a>
-                                            <a class="inline-block text-coolGray-300 hover:text-coolGray-400" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="w-6 h-6 text-pink-600  bi bi-instagram"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                                                </svg>
-                                            </a>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <div class="w-full border-black p-2 rounded-xl shadow-xl px-4 mb-10 sm:w-1/2 lg:w-1/3 xl:w-1/6 md:mr-2 mx-10 md:mx-0">
@@ -148,35 +107,12 @@ export default function Home() {
                                         <div
                                             class="inline-block mb-3 overflow-hidden text-xs text-white bg-blue-700 rounded-full w-44 h-44 sm:w-44 sm:h-44">
                                             <img class="object-cover w-full h-full transition-all hover:scale-110"
-                                                src="https://i.postimg.cc/q7pv50zT/pexels-edmond-dant-s-4342352.jpg" alt="" />
+                                                src="https://res.cloudinary.com/dtyombve3/image/upload/v1706348568/download_1_gnhond.png" alt="" />
                                         </div>
-                                        <h2 class="mb-2 text-xl font-semibold text-gray-800 ">Shree Kimson</h2>
-                                        <span class="inline-block mb-6 text-base font-medium text-blue-500 ">Manager
+                                        <h2 class="mb-2 text-xl font-semibold text-gray-800 ">NIT Karnataka</h2>
+                                        <span class="inline-block mb-6 text-base font-medium text-blue-500 ">B Tech
                                         </span>
-                                        <div class="flex items-center justify-center">
-                                            <a class="inline-block mr-5 text-coolGray-300 hover:text-coolGray-400" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="w-6 h-6 text-blue-800 bi bi-facebook " viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                </svg>
-                                            </a>
-                                            <a class="inline-block mr-5 text-coolGray-300 hover:text-coolGray-400" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="w-6 h-6 text-blue-500  bi bi-twitter" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                </svg>
-                                            </a>
-                                            <a class="inline-block text-coolGray-300 hover:text-coolGray-400" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="w-6 h-6 text-pink-600  bi bi-instagram"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                                                </svg>
-                                            </a>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                                 <div class="w-full border-black p-2 rounded-xl shadow-xl px-4 mb-10 sm:w-1/2 lg:w-1/3 xl:w-1/6 md:mr-2 mx-10 md:mx-0">
@@ -184,35 +120,12 @@ export default function Home() {
                                         <div
                                             class="inline-block mb-3 overflow-hidden text-xs text-white bg-blue-700 rounded-full w-44 h-44 sm:w-44 sm:h-44">
                                             <img class="object-cover w-full h-full transition-all hover:scale-110"
-                                                src="https://i.postimg.cc/05hmHMx1/pexels-emmy-e-2381069.jpg" alt="" />
+                                                src="https://res.cloudinary.com/dtyombve3/image/upload/v1706963279/iit-delhi_x6s3gg.png" alt="" />
                                         </div>
-                                        <h2 class="mb-2 text-xl font-semibold text-gray-800 ">Harry limbia</h2>
-                                        <span class="inline-block mb-6 text-base font-medium text-blue-500 ">Founder
-                                            &amp; CEO</span>
-                                        <div class="flex items-center justify-center">
-                                            <a class="inline-block mr-5 text-coolGray-300 hover:text-coolGray-400" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="w-6 h-6 text-blue-800 bi bi-facebook " viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                </svg>
-                                            </a>
-                                            <a class="inline-block mr-5 text-coolGray-300 hover:text-coolGray-400" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="w-6 h-6 text-blue-500  bi bi-twitter" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                </svg>
-                                            </a>
-                                            <a class="inline-block text-coolGray-300 hover:text-coolGray-400" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="w-6 h-6 text-pink-600  bi bi-instagram"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                                                </svg>
-                                            </a>
-                                        </div>
+                                        <h2 class="mb-2 text-xl font-semibold text-gray-800 ">IIT Delhi</h2>
+                                        <span class="inline-block mb-6 text-base font-medium text-blue-500 ">B Tech
+                                        </span>
+                                        
                                     </div>
                                 </div>
                                 <div class="w-full border-black p-2 rounded-xl shadow-xl px-4 mb-10 sm:w-1/2 lg:w-1/3 xl:w-1/6 md:mr-2 mx-10 md:mx-0">
@@ -220,36 +133,13 @@ export default function Home() {
                                         <div
                                             class="inline-block mb-3 overflow-hidden text-xs text-white bg-blue-700 rounded-full w-44 h-44 sm:w-44 sm:h-44">
                                             <img class="object-cover w-full h-full transition-all hover:scale-110"
-                                                src="https://i.postimg.cc/bNyr5cJq/pexels-anastasia-shuraeva-5704720.jpg" alt="" />
+                                                src="https://res.cloudinary.com/dtyombve3/image/upload/v1706963432/download_2_xte78k.jpg" alt="" />
                                         </div>
-                                        <h2 class="mb-2 text-xl font-semibold text-gray-800 ">Saleena Robinson</h2>
+                                        <h2 class="mb-2 text-xl font-semibold text-gray-800 ">AIIMS Delhi</h2>
                                         <span
-                                            class="inline-block mb-6 text-base font-medium text-blue-500 ">Photographer
+                                            class="inline-block mb-6 text-base font-medium text-blue-500 ">MBBS
                                         </span>
-                                        <div class="flex items-center justify-center">
-                                            <a class="inline-block mr-5 text-coolGray-300 hover:text-coolGray-400" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="w-6 h-6 text-blue-800 bi bi-facebook " viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                                </svg>
-                                            </a>
-                                            <a class="inline-block mr-5 text-coolGray-300 hover:text-coolGray-400" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="w-6 h-6 text-blue-500  bi bi-twitter" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                                </svg>
-                                            </a>
-                                            <a class="inline-block text-coolGray-300 hover:text-coolGray-400" href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                    class="w-6 h-6 text-pink-600  bi bi-instagram"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                                                </svg>
-                                            </a>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -257,11 +147,11 @@ export default function Home() {
                     </section>
                     {/* 2nd page */}
                     <h1></h1>
-                    <section class="flex items-center font-poppins ">
+                    <section id='collages' class="flex items-center font-poppins ">
                         <div class="justify-center  px-4 py-4 mx-auto lg:py-0">
                             <div className='flex w-full'>
 
-                                <h1 className='text-4xl mb-5 font-bold w-1/2'>Our Collages</h1>
+                                <h1 className='text-4xl mb-5 font-bold w-1/2'>Programs available</h1>
                                 <div className='w-1/2 flex justify-end'>
 
                                     <img className='' src="https://res.cloudinary.com/dtyombve3/image/upload/v1705211369/Polygon_5_jbgz57.png" alt="" />
@@ -269,127 +159,123 @@ export default function Home() {
                             </div>
                             <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 md:grid-cols-2">
                                 <div class="bg-white rounded-2xl shadow-2xl overflow-hidden ">
-                                    <a href="#" class=""><img src="https://i.postimg.cc/904JVBhh/pexels-andrea-piacquadio-840996.jpg"
+                                    <a href="#" class=""><img src="https://res.cloudinary.com/dtyombve3/image/upload/v1706978603/pexels-christina-morillo-1181244_u9yzyo.jpg"
                                         alt="" class="object-cover w-full h-64 rounded-t-lg" /></a>
                                     <div class="p-5">
                                         <a href="#" class="">
-                                            <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-700 ">Lorem
-                                                ipsum dor ismudsa suditdsas</h2>
+                                            <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-700 ">
+                                                Engineering</h2>
                                         </a>
                                         <ul className='list-disc'>
-                                            <li>Item 1</li>
-                                            <li>Item 2</li>
-                                            <li>Item 3</li>
+                                            <li>Jee</li>
+                                            <li>ComedK</li>
+                                            <li>BITS</li>
                                         </ul>
 
                                     </div>
                                     <div className='w-full flex border-2'>
-                                        <button className='flex items-center justify-center w-1/2 py-2 bg-gray-200  hover:bg-gray-100-700 hover:tracking-wide transition-all'>Buy Now</button>
+                                        <Link href='#' className='flex items-center justify-center w-1/2 py-2 bg-gray-200  hover:bg-gray-100-700 hover:tracking-wide transition-all'>Apply Now</Link>
                                         <button className='flex items-center justify-center w-1/2 py-2 bg-blue-800 text-white hover:bg-blue-700 hover:tracking-wide transition-all'>Explore</button>
                                     </div>
                                 </div>
                                 <div class="bg-white rounded-2xl shadow-2xl overflow-hidden  ">
-                                    <a href="#" class=""><img src="https://i.postimg.cc/fW3hVdhv/pexels-rodnae-productions-7648047.jpg"
+                                    <a href="#" class=""><img src="https://res.cloudinary.com/dtyombve3/image/upload/v1706978699/pexels-karolina-grabowska-4021775_lmv0hj.jpg"
                                         alt="" class="object-cover w-full h-64 rounded-t-lg" /></a>
                                     <div class="p-5">
                                         <a href="#" class="">
-                                            <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-700 ">Lorem
-                                                ipsum dor ismudsa suditdsas</h2>
+                                            <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-700 ">Medical</h2>
                                         </a>
                                         <ul className='list-disc'>
-                                            <li>Item 1</li>
-                                            <li>Item 2</li>
-                                            <li>Item 3</li>
+                                            <li>NEET UG</li>
+                                            <li>NEET PG</li>
+                                            <li>Foreign University</li>
                                         </ul>
 
                                     </div>
                                     <div className='w-full flex border-2'>
-                                        <button className='flex items-center justify-center w-1/2 py-2 bg-gray-200  hover:bg-gray-100-700 hover:tracking-wide transition-all'>Buy Now</button>
+                                        <Link href='#' className='flex items-center justify-center w-1/2 py-2 bg-gray-200  hover:bg-gray-100-700 hover:tracking-wide transition-all'>Apply Now</Link>
                                         <button className='flex items-center justify-center w-1/2 py-2 bg-blue-800 text-white hover:bg-blue-700 hover:tracking-wide transition-all'>Explore</button>
                                     </div>
                                 </div>
                                 <div class="bg-white rounded-2xl shadow-2xl overflow-hidden ">
-                                    <a href="#" class=""><img src="https://i.postimg.cc/pdZ0BTZg/pexels-cowomen-2041627.jpg" alt=""
+                                    <a href="#" class=""><img src="https://res.cloudinary.com/dtyombve3/image/upload/v1706964734/pexels-pixabay-416405_pr8fcs.jpg" alt=""
                                         class="object-cover w-full h-64 rounded-t-lg" /></a>
                                     <div class="p-5">
                                         <a href="#" class="">
-                                            <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-700 ">Lorem
-                                                ipsum dor ismudsa suditdsas</h2>
+                                            <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-700 ">MBA</h2>
                                         </a>
                                         <ul className='list-disc'>
-                                            <li>Item 1</li>
-                                            <li>Item 2</li>
-                                            <li>Item 3</li>
+                                            <li>CAT</li>
+                                            <li>Gmat
+                                            </li>
+                                            <li>XAT</li>
                                         </ul>
                                     </div>
                                     <div className='w-full flex border-2'>
-                                        <button className='flex items-center justify-center w-1/2 py-2 bg-gray-200  hover:bg-gray-100-700 hover:tracking-wide transition-all'>Buy Now</button>
+                                        <Link href='#' className='flex items-center justify-center w-1/2 py-2 bg-gray-200  hover:bg-gray-100-700 hover:tracking-wide transition-all'>Apply Now</Link>
                                         <button className='flex items-center justify-center w-1/2 py-2 bg-blue-800 text-white hover:bg-blue-700 hover:tracking-wide transition-all'>Explore</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
-                    <section class="flex items-center mt-10 font-poppins ">
-                        <div class="justify-center  px-4 py-4 mx-auto lg:py-0">
+                    <section class="flex  items-center mt-5 font-poppins ">
+                        <div class="flex max-w-7xl justify-center items-center px-4 py-4 mx-auto lg:py-0">
                             <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 md:grid-cols-2">
                                 <div class="bg-white rounded-2xl shadow-2xl overflow-hidden ">
-                                    <a href="#" class=""><img src="https://i.postimg.cc/904JVBhh/pexels-andrea-piacquadio-840996.jpg"
+                                    <a href="#" class=""><img src="https://res.cloudinary.com/dtyombve3/image/upload/v1706979811/How-to-Get-Direct-Admission-in-MBBS_a8hrjd.jpg"
                                         alt="" class="object-cover w-full h-64 rounded-t-lg" /></a>
                                     <div class="p-5">
                                         <a href="#" class="">
-                                            <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-700 ">Lorem
-                                                ipsum dor ismudsa suditdsas</h2>
+                                            <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-700 ">Direct Admission</h2>
                                         </a>
                                         <ul className='list-disc'>
-                                            <li>Item 1</li>
-                                            <li>Item 2</li>
-                                            <li>Item 3</li>
+                                            <li>Into Engineering</li>
+                                            <li>Into Medical</li>
+                                            <li>Into MBA</li>
                                         </ul>
 
                                     </div>
                                     <div className='w-full flex border-2'>
-                                        <button className='flex items-center justify-center w-1/2 py-2 bg-gray-200  hover:bg-gray-100-700 hover:tracking-wide transition-all'>Buy Now</button>
+                                        <Link href='#' className='flex items-center justify-center w-1/2 py-2 bg-gray-200  hover:bg-gray-100-700 hover:tracking-wide transition-all'>Apply Now</Link>
                                         <button className='flex items-center justify-center w-1/2 py-2 bg-blue-800 text-white hover:bg-blue-700 hover:tracking-wide transition-all'>Explore</button>
                                     </div>
                                 </div>
                                 <div class="bg-white rounded-2xl shadow-2xl overflow-hidden ">
-                                    <a href="#" class=""><img src="https://i.postimg.cc/904JVBhh/pexels-andrea-piacquadio-840996.jpg"
+                                    <a href="#" class=""><img src="https://res.cloudinary.com/dtyombve3/image/upload/v1706979718/guidance-and-counselling_wzgseh.png"
                                         alt="" class="object-cover w-full h-64 rounded-t-lg" /></a>
                                     <div class="p-5">
                                         <a href="#" class="">
-                                            <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-700 ">Lorem
-                                                ipsum dor ismudsa suditdsas</h2>
+                                            <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-700 ">Counselling</h2>
                                         </a>
                                         <ul className='list-disc'>
-                                            <li>Item 1</li>
-                                            <li>Item 2</li>
-                                            <li>Item 3</li>
+                                            <li>JEE</li>
+                                            <li>NEET</li>
+                                            <li>ComedK</li>
                                         </ul>
 
                                     </div>
                                     <div className='w-full flex border-2'>
-                                        <button className='flex items-center justify-center w-1/2 py-2 bg-gray-200  hover:bg-gray-100-700 hover:tracking-wide transition-all'>Buy Now</button>
+                                        <Link href='#' className='flex items-center justify-center w-1/2 py-2 bg-gray-200  hover:bg-gray-100-700 hover:tracking-wide transition-all'>Apply Now</Link>
                                         <button className='flex items-center justify-center w-1/2 py-2 bg-blue-800 text-white hover:bg-blue-700 hover:tracking-wide transition-all'>Explore</button>
                                     </div>
                                 </div>
                                 <div class="bg-white rounded-2xl overflow-hidden ">
-                                    <a href="#" class=""><img src="https://i.postimg.cc/904JVBhh/pexels-andrea-piacquadio-840996.jpg"
+                                    <a href="#" class=""><img src="https://res.cloudinary.com/dtyombve3/image/upload/v1706979338/career-guidance_lksbqp.jpg"
                                         alt="" class="object-cover w-full h-64 rounded-t-lg" /></a>
                                     <div class="p-5">
                                         <a href="#" class="">
-                                            <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-700 ">Lorem
-                                                ipsum dor ismudsa suditdsas</h2>
+                                            <h2 class="mb-2 text-xl font-bold tracking-tight text-gray-700 ">Career Guidance</h2>
                                         </a>
                                         <ul className='list-disc'>
-                                            <li>Item 1</li>
-                                            <li>Item 2</li>
-                                            <li>Item 3</li>
+                                            <li>MBA Applications</li>
+                                            <li>Study Abroad</li>
+                                            <li>Right Career</li>
                                         </ul>
 
                                     </div>
                                     <div className='w-full flex border-2'>
-                                        <button className='flex items-center justify-center w-1/2 py-2 bg-gray-200  hover:bg-gray-100-700 hover:tracking-wide transition-all'>Buy Now</button>
+                                        <Link href='#' className='flex items-center justify-center w-1/2 py-2 bg-gray-200  hover:bg-gray-100-700 hover:tracking-wide transition-all'>Apply Now</Link>
                                         <button className='flex items-center justify-center w-1/2 py-2 bg-blue-800 text-white hover:bg-blue-700 hover:tracking-wide transition-all'>Explore</button>
                                     </div>
                                 </div>
@@ -408,7 +294,7 @@ export default function Home() {
                     </div>
                 </div>
                 {/* 3rd page */}
-                <section class="flex items-center bg-gray-50 lg:h-screen font-poppins">
+                <section class="flex items-center bg-gray-50 lg:h-screen font-poppins" id="about">
                     <div class="justify-center flex-1 max-w-6xl px-2 py-4 mx-auto lg:py-6 md:px-6">
                         <div class="flex flex-wrap lg:flex-nowrap">
                             <div class="w-full my-12 lg:w-1/2 lg:my-0">
@@ -420,7 +306,7 @@ export default function Home() {
                                     <div class="mb-4">
                                         <span
                                             class="px-3 py-1 font-bold text-yellow-400 bg-blue-50 rounded-xl">
-                                            Lorem ipsum</span>
+                                            About Us</span>
                                         <h2 class="mt-4 text-4xl font-bold">Key Features</h2>
                                     </div>
                                     {/* <div class="flex items-start py-4">
@@ -468,7 +354,9 @@ export default function Home() {
                             </div>
                         </div> */}
 
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae neque ullam temporibus! Officiis praesentium tempora unde quisquam, iusto blanditiis fugiat placeat, rem molestias illo, porro dicta alias tempore. Placeat accusantium corporis ut aut est quasi autem nostrum accusamus eveniet impedit! Provident sit, voluptate ipsam illo repellat nam animi ipsum in.
+Welcome to Jain Consultancy, your go-to partner for NEET, JEE, and competitive exam success. Our expert team, comprising seasoned educators and advisors, offers personalized programs tailored to individual needs, ensuring a focused and effective approach. We pride ourselves on fostering a transparent and nurturing environment, instilling the confidence needed to excel in competitive exams.
+
+At Jain Consultancy, we are not just educators; we are mentors on your journey to academic excellence. Join us for a concise and impactful preparation experience, where success becomes a reality.
                                     <button className=' rounded-md flex  px-2 mt-2 py-2 bg-blue-800 text-white hover:bg-blue-700 hover:tracking-wide transition-all' >Explore More About Us</button>
                                 </div>
                             </div>
@@ -483,7 +371,7 @@ export default function Home() {
                                     It Works
                                 </span> </h1>
                                 <h1 className="text-3xl text-center font-bold leading-tight " >
-                                    Your Path to the Perfect College
+                                    3 Step path to your Perfect Collage
                                 </h1>
                                 <div class="flex w-24 mt-1 mb-6 overflow-hidden rounded">
                                     <div class="flex-1 h-2 bg-blue-200">
@@ -534,9 +422,7 @@ export default function Home() {
                                                                         Initial Consultation
                                                                     </p>
                                                                     <p className='text-gray-700'>
-                                                                        Understanding the student’s
-                                                                        aspirations and academic
-                                                                        record.
+                                                                    Your journey has just begun, and we're excited to guide you towards your academic goals. Get ready for a transformative experience as we embark on this path together!.
                                                                     </p>
                                                                 </div>
 
@@ -578,7 +464,8 @@ export default function Home() {
                                                                             Shortlist
                                                                         </p>
                                                                         <p className='text-gray-700'>
-                                                                            Presenting a list of suitable colleges.
+                                                                            
+Kudos on unlocking your Customized College Shortlist! Your unique path to success starts here, tailored to your aspirations. Get ready for an exciting academic journey ahead!
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -619,8 +506,8 @@ export default function Home() {
                                                                         Assistance
                                                                     </p>
                                                                     <p className='text-gray-700'>
-                                                                        Presenting a list of suitable
-                                                                        colleges.
+                                                                        
+Exciting news – your Application Assistance journey begins! Trust us to navigate the process, ensuring your applications shine. Let's make your academic dreams a reality together!
                                                                     </p>
                                                                 </div>
 
@@ -658,11 +545,10 @@ export default function Home() {
                                                                             class="text-6xl font-bold text-white  text-bold">
                                                                             04</p>
                                                                         <p className='text-xl font-bold text-white'>
-                                                                            Ongoing Support
+                                                                            Dream Collage
                                                                         </p>
                                                                         <p className=' text-white'>
-                                                                            Continuous support until college
-                                                                            admission.
+                                                                        Congrats on your dream college acceptance – your success is our pride! Thrive ahead with confidence!
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -704,258 +590,119 @@ export default function Home() {
                             <button className=' rounded-md flex  px-2 mt-2 py-2 bg-white hover:font-bold  hover:bg-gray-200 hover:tracking-wide transition-all' >Explore More About Us</button>
                         </div>
                         <div>
-                        <div class="flex flex-wrap justify-center">
-                            <div class="w-full py-5 md:w-1/2 lg:w-1/3 md:px-5">
-                                <div class="px-6 py-8 bg-white rounded shadow ">
-                                    <div class="flex items-center mb-4">
-                                        <img class="object-cover w-16 h-16 rounded-full"
-                                            src="https://i.postimg.cc/bNyr5cJq/pexels-anastasia-shuraeva-5704720.jpg" alt="" />
-                                        <div class="pl-4">
-                                            <p class="text-xl font-bold ">Davina becham </p>
-                                            <p class="font-medium text-blue-600 ">Supervisor</p>
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full py-5 md:w-1/2 lg:w-1/3 md:px-5">
+                                    <div class="px-6 py-8 bg-white rounded shadow ">
+                                        <div class="flex items-center mb-4">
+                                            <img class="object-cover w-16 h-16 rounded-full"
+                                                src="https://i.postimg.cc/bNyr5cJq/pexels-anastasia-shuraeva-5704720.jpg" alt="" />
+                                            <div class="pl-4">
+                                                <p class="text-xl font-bold ">Arjun Sharma </p>
+                                                <p class="font-medium text-blue-600 ">DTU - BTech</p>
+                                            </div>
                                         </div>
+                                        <p class="mb-4 leading-loose text-gray-500 ">
+                                            
+Kudos to Jain Consultancy for guiding me to DTU! Their personalized support was key to my successful admission. Highly recommend their services for aspiring students.
+                                        </p>
+                                        
                                     </div>
-                                    <p class="mb-4 leading-loose text-gray-500 ">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam
-                                    </p>
-                                    <div class="flex items-center justify-start">
-                                        <a class="inline-block mr-5 text-blue-800  hover:text-blue-600" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-facebook " viewBox="0 0 16 16">
-                                                <path
-                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                            </svg>
-                                        </a>
-                                        <a class="inline-block mr-5 text-blue-500  hover:text-blue-400" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-twitter" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                            </svg>
-                                        </a>
-                                        <a class="inline-block text-pink-600  hover:text-pink-500" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-instagram" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                                            </svg>
-                                        </a>
+                                </div>
+                                <div class="w-full py-5 md:w-1/2 lg:w-1/3 md:px-5">
+                                    <div class="px-6 py-8 bg-white rounded shadow ">
+                                        <div class="flex items-center mb-4">
+                                            <img class="object-cover w-16 h-16 rounded-full"
+                                                src="https://i.postimg.cc/q7pv50zT/pexels-edmond-dant-s-4342352.jpg" alt="" />
+                                            <div class="pl-4">
+                                                <p class="text-xl font-bold ">Aisha Kapoor</p>
+                                                <p class="font-medium text-blue-600 ">AIIMS Rishikesh - MBBS</p>
+                                            </div>
+                                        </div>
+                                        <p class="mb-4 leading-loose text-gray-500 ">
+                                        Thanks to Jain Consultancy, I'm now at AIIMS Rishikesh! Their guidance was crucial, and I highly recommend their services for aspiring medical students. 
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="w-full py-5 md:w-1/2 lg:w-1/3 md:px-5">
+                                    <div class="px-6 py-8 bg-white rounded shadow ">
+                                        <div class="flex items-center mb-4">
+                                            <img class="object-cover w-16 h-16 rounded-full"
+                                                src="https://i.postimg.cc/05hmHMx1/pexels-emmy-e-2381069.jpg" alt="" />
+                                            <div class="pl-4">
+                                                <p class="text-xl font-bold ">Siddharth Malhotra </p>
+                                                <p class="font-medium text-blue-600 ">VIT Vellore - BTech</p>
+                                            </div>
+                                        </div>
+                                        <p class="mb-4 leading-loose text-gray-500 ">
+                                            
+Thanks to Jain Consultancy, I'm now at VIT Vellore! Their support was key to my admission success. Highly recommend for aspiring engineering students.
+                                        </p>
+                                        
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-full py-5 md:w-1/2 lg:w-1/3 md:px-5">
-                                <div class="px-6 py-8 bg-white rounded shadow ">
-                                    <div class="flex items-center mb-4">
-                                        <img class="object-cover w-16 h-16 rounded-full"
-                                            src="https://i.postimg.cc/q7pv50zT/pexels-edmond-dant-s-4342352.jpg" alt="" />
-                                        <div class="pl-4">
-                                            <p class="text-xl font-bold ">Amit simon </p>
-                                            <p class="font-medium text-blue-600 ">Manager</p>
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full py-5 md:w-1/2 lg:w-1/3 md:px-5">
+                                    <div class="px-6 py-8 bg-white rounded shadow ">
+                                        <div class="flex items-center mb-4">
+                                            <img class="object-cover w-16 h-16 rounded-full"
+                                                src="https://i.postimg.cc/bNyr5cJq/pexels-anastasia-shuraeva-5704720.jpg" alt="" />
+                                            <div class="pl-4">
+                                                <p class="text-xl font-bold ">Nandini VermaM </p>
+                                                <p class="font-medium text-blue-600 ">NMIMS - MBA</p>
+                                            </div>
                                         </div>
+                                        <p class="mb-4 leading-loose text-gray-500 ">
+                                        Thanks to Jain Consultancy, I'm now pursuing MBA at NMIMS! Their guidance was crucial for my admission success. Highly recommend .
+                                        </p>
+                                        
                                     </div>
-                                    <p class="mb-4 leading-loose text-gray-500 ">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam
-                                    </p>
-                                    <div class="flex items-center justify-start">
-                                        <a class="inline-block mr-5 text-blue-800  hover:text-blue-600" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-facebook " viewBox="0 0 16 16">
-                                                <path
-                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                            </svg>
-                                        </a>
-                                        <a class="inline-block mr-5 text-blue-500  hover:text-blue-400" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-twitter" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                            </svg>
-                                        </a>
-                                        <a class="inline-block text-pink-600  hover:text-pink-500" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-instagram" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                                            </svg>
-                                        </a>
+                                </div>
+                                <div class="w-full py-5 md:w-1/2 lg:w-1/3 md:px-5">
+                                    <div class="px-6 py-8 bg-white rounded shadow ">
+                                        <div class="flex items-center mb-4">
+                                            <img class="object-cover w-16 h-16 rounded-full"
+                                                src="https://i.postimg.cc/q7pv50zT/pexels-edmond-dant-s-4342352.jpg" alt="" />
+                                            <div class="pl-4">
+                                                <p class="text-xl font-bold ">Ananya Singhania </p>
+                                                <p class="font-medium text-blue-600 ">DU SRCC</p>
+                                            </div>
+                                        </div>
+                                        <p class="mb-4 leading-loose text-gray-500 ">
+                                            
+A huge shout-out to Jain Consultancy for steering me towards DU SRCC! Their personalized guidance and support were instrumental in securing my admission. 
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                                <div class="w-full py-5 md:w-1/2 lg:w-1/3 md:px-5">
+                                    <div class="px-6 py-8 bg-white rounded shadow ">
+                                        <div class="flex items-center mb-4">
+                                            <img class="object-cover w-16 h-16 rounded-full"
+                                                src="https://i.postimg.cc/05hmHMx1/pexels-emmy-e-2381069.jpg" alt="" />
+                                            <div class="pl-4">
+                                                <p class="text-xl font-bold ">Siddharth Malhotra</p>
+                                                <p class="font-medium text-blue-600 ">BITS - Btech
+</p>
+                                            </div>
+                                        </div>
+                                        <p class="mb-4 leading-loose text-gray-500 ">
+                                            
+Big thanks to Jain Consultancy for guiding my path to BITS for BTech! Their personalized support and expertise were instrumental in my admission success.
+                                        </p>
+                                        
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-full py-5 md:w-1/2 lg:w-1/3 md:px-5">
-                                <div class="px-6 py-8 bg-white rounded shadow ">
-                                    <div class="flex items-center mb-4">
-                                        <img class="object-cover w-16 h-16 rounded-full"
-                                            src="https://i.postimg.cc/05hmHMx1/pexels-emmy-e-2381069.jpg" alt="" />
-                                        <div class="pl-4">
-                                            <p class="text-xl font-bold ">Riyana ismith </p>
-                                            <p class="font-medium text-blue-600 ">Team Leader</p>
-                                        </div>
-                                    </div>
-                                    <p class="mb-4 leading-loose text-gray-500 ">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam
-                                    </p>
-                                    <div class="flex items-center justify-start">
-                                        <a class="inline-block mr-5 text-blue-800  hover:text-blue-600" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-facebook " viewBox="0 0 16 16">
-                                                <path
-                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                            </svg>
-                                        </a>
-                                        <a class="inline-block mr-5 text-blue-500  hover:text-blue-400" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-twitter" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                            </svg>
-                                        </a>
-                                        <a class="inline-block text-pink-600  hover:text-pink-500" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-instagram" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="flex flex-wrap justify-center">
-                            <div class="w-full py-5 md:w-1/2 lg:w-1/3 md:px-5">
-                                <div class="px-6 py-8 bg-white rounded shadow ">
-                                    <div class="flex items-center mb-4">
-                                        <img class="object-cover w-16 h-16 rounded-full"
-                                            src="https://i.postimg.cc/bNyr5cJq/pexels-anastasia-shuraeva-5704720.jpg" alt="" />
-                                        <div class="pl-4">
-                                            <p class="text-xl font-bold ">Davina becham </p>
-                                            <p class="font-medium text-blue-600 ">Supervisor</p>
-                                        </div>
-                                    </div>
-                                    <p class="mb-4 leading-loose text-gray-500 ">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam
-                                    </p>
-                                    <div class="flex items-center justify-start">
-                                        <a class="inline-block mr-5 text-blue-800  hover:text-blue-600" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-facebook " viewBox="0 0 16 16">
-                                                <path
-                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                            </svg>
-                                        </a>
-                                        <a class="inline-block mr-5 text-blue-500  hover:text-blue-400" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-twitter" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                            </svg>
-                                        </a>
-                                        <a class="inline-block text-pink-600  hover:text-pink-500" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-instagram" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-full py-5 md:w-1/2 lg:w-1/3 md:px-5">
-                                <div class="px-6 py-8 bg-white rounded shadow ">
-                                    <div class="flex items-center mb-4">
-                                        <img class="object-cover w-16 h-16 rounded-full"
-                                            src="https://i.postimg.cc/q7pv50zT/pexels-edmond-dant-s-4342352.jpg" alt="" />
-                                        <div class="pl-4">
-                                            <p class="text-xl font-bold ">Amit simon </p>
-                                            <p class="font-medium text-blue-600 ">Manager</p>
-                                        </div>
-                                    </div>
-                                    <p class="mb-4 leading-loose text-gray-500 ">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam
-                                    </p>
-                                    <div class="flex items-center justify-start">
-                                        <a class="inline-block mr-5 text-blue-800  hover:text-blue-600" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-facebook " viewBox="0 0 16 16">
-                                                <path
-                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                            </svg>
-                                        </a>
-                                        <a class="inline-block mr-5 text-blue-500  hover:text-blue-400" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-twitter" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                            </svg>
-                                        </a>
-                                        <a class="inline-block text-pink-600  hover:text-pink-500" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-instagram" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-full py-5 md:w-1/2 lg:w-1/3 md:px-5">
-                                <div class="px-6 py-8 bg-white rounded shadow ">
-                                    <div class="flex items-center mb-4">
-                                        <img class="object-cover w-16 h-16 rounded-full"
-                                            src="https://i.postimg.cc/05hmHMx1/pexels-emmy-e-2381069.jpg" alt="" />
-                                        <div class="pl-4">
-                                            <p class="text-xl font-bold ">Riyana ismith </p>
-                                            <p class="font-medium text-blue-600 ">Team Leader</p>
-                                        </div>
-                                    </div>
-                                    <p class="mb-4 leading-loose text-gray-500 ">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut
-                                        labore et dolore magna aliqua. Ut enim ad minim veniam
-                                    </p>
-                                    <div class="flex items-center justify-start">
-                                        <a class="inline-block mr-5 text-blue-800  hover:text-blue-600" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-facebook " viewBox="0 0 16 16">
-                                                <path
-                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                            </svg>
-                                        </a>
-                                        <a class="inline-block mr-5 text-blue-500  hover:text-blue-400" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-twitter" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                            </svg>
-                                        </a>
-                                        <a class="inline-block text-pink-600  hover:text-pink-500" href="#">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="w-6 h-6 bi bi-instagram" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
                         </div>
-                        
-                        
+
+
                     </div>
-                   
+
                 </section>
-                <Faqs/>
-                
+                <Faqs />
+
             </div>
         </>
     )

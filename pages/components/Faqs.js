@@ -32,19 +32,15 @@ const FaqSection = () => {
     const faqData = [
         {
             question: 'What kind of support do you offer for college applications?',
-            answer: 'Answer to the first question goes here.',
+            answer: 'We provide comprehensive support for college applications, including personalized guidance, application strategy development, assistance with essay writing, and preparation for interviews. Our goal is to ensure that each student presents a compelling and unique application that stands out to admissions committees.',
         },
         {
-            question: 'Can you help with financial aid and scholarship applications?',
-            answer: 'Answer to the second question goes here.',
-        },
-        {
-            question: 'How experienced are your consultants?',
-            answer: 'Answer to the third question goes here.',
+            question: 'Can you help with scholarship Applications?',
+            answer: 'Absolutely! We offer dedicated assistance for scholarship applications. Our services include guidance on identifying suitable scholarships, crafting compelling application essays, and ensuring all required documentation is in order. We aim to maximize your chances of securing scholarships that align with your academic and personal achievements.',
         },
         {
             question: 'How experienced are your consultants?',
-            answer: 'Answer to the fourth question goes here.',
+            answer: 'Our consultants are highly experienced professionals with a wealth of expertise in education consulting. Each member of our team possesses a strong background in academia, admissions, and career guidance. Rest assured, our consultants are committed to providing you with the highest level of expertise and personalized support to help you achieve your academic and career goals.',
         },
     ];
 
