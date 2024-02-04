@@ -75,18 +75,18 @@ const Navbar = () => {
           </ul>
 
           <div className="hidden lg:block">
-            <a
+            <Link
               href="#"
               className="inline-block px-4 py-3 mr-2 text-xs font-semibold leading-none text-gray-100 bg-blue-800 border border-blue-200 rounded hover:border-blue-400 hover:bg-blue-400"
             >
              Book a free consultancy
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               className="inline-block px-4 py-3 mr-2 text-xs font-semibold leading-none text-blue-600 border border-blue-200 rounded hover:border-blue-300"
             >
               Call us now
-            </a>
+            </Link>
            
           </div>
         </div>
