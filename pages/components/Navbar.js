@@ -146,9 +146,9 @@ const Navbar = () => {
               </Link>
             </li>
             <li class="pb-3">
-              <a href="/percentilepredictor" class="text-sm text-gray-700 hover:text-blue-400">
+              <Link href="/percentilepredictor" class="text-sm text-gray-700 hover:text-blue-400">
                 Rank Predictor
-              </a>
+              </Link>
             </li>
           </ul>
           {/* <div class="block mt-5 lg:hidden">
