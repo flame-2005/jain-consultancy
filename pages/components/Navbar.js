@@ -151,7 +151,7 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <div class="block mt-5 lg:hidden">
+          {/* <div class="block mt-5 lg:hidden">
             <a
               href="#"
               class="inline-block w-full px-4 py-3 mb-4 mr-2 text-xs font-semibold leading-none text-center text-blue-600 border border-blue-400 rounded hover:border-blue-300"
@@ -161,7 +161,7 @@ const Navbar = () => {
             <a href="#" class="inline-block w-full px-4 py-3 mr-2 text-xs font-semibold leading-none text-center text-gray-100 rounded bg-blue-800">
               Sign Up
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
