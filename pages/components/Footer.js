@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
@@ -10,74 +11,74 @@ const Footer = () => {
        <img src="https://res.cloudinary.com/dtyombve3/image/upload/v1705209934/Untitled_design_10_1_puerxc.png" alt="" />
         <span class="ml-3 text-xl">Jain Consultancy</span>
       </a>
-      <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+      {/* <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p> */}
     </div>
     <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Connect With Us</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            <Link href={'/'} class="text-gray-600 hover:text-gray-800">Stay updated</Link>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            <Link href={'/'} class="text-gray-600 hover:text-gray-800">Facebook</Link>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            <Link href={'/'} class="text-gray-600 hover:text-gray-800">Twitter</Link>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+            <Link href={'/'} class="text-gray-600 hover:text-gray-800">LinkedIn</Link>
           </li>
         </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Contact Us</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            <Link href={'/'} class="text-gray-600 hover:text-gray-800">Reach out</Link>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            <Link href={'/'} class="text-gray-600 hover:text-gray-800">Email</Link>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            <Link href={'/'} class="text-gray-600 hover:text-gray-800">Customer Care</Link>
+          </li>
+          {/* <li>
+            <Link class="text-gray-600 hover:text-gray-800">Fourth Link</Link>
+          </li> */}
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Services</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <Link href={'/'} class="text-gray-600 hover:text-gray-800">Explore our comprehensive range</Link>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+            <Link href={'/'} class="text-gray-600 hover:text-gray-800">College Applications</Link>
+          </li>
+          <li>
+            <Link href={'/'} class="text-gray-600 hover:text-gray-800">Test Preparation</Link>
+          </li>
+          <li>
+            <Link href={'/'} class="text-gray-600 hover:text-gray-800">Scholarship Guidance</Link>
           </li>
         </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">About Us</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            <Link href={'/'} class="text-gray-600 hover:text-gray-800">Learn more</Link>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            <Link href={'/'} class="text-gray-600 hover:text-gray-800">Our Team</Link>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            <Link href={'/'} class="text-gray-600 hover:text-gray-800">Our Approach</Link>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-          </li>
-        </nav>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-        <nav class="list-none mb-10">
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+            <Link href={'/'} class="text-gray-600 hover:text-gray-800">Testimonials</Link>
           </li>
         </nav>
       </div>
