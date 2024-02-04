@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <>
             <div>
-            <Link href={'/'} type="button" class="z-[100] md:hidden fixed bottom-5 right-10 text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2 text-4xl"><FaArrowAltCircleUp /></Link>
+                <Link href={'/'} type="button" class="z-[100] md:hidden fixed bottom-5 right-10 text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2 text-4xl"><FaArrowAltCircleUp /></Link>
                 <div>
                     <section class=" relative overflow-hidden mt-10">
                         <div class="relative flex items-center justify-center w-full text-center bg-center bg-cover"
@@ -86,7 +86,7 @@ export default function Home() {
                                         <h2 class="mb-2 text-xl font-semibold text-gray-800 ">NMIMS</h2>
                                         <span class="inline-block mb-6 text-base font-medium text-blue-500 ">BBA
                                         </span>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="w-full border-black p-2 rounded-xl shadow-xl px-4 mb-10 sm:w-1/2 lg:w-1/3 xl:w-1/6 md:mr-2 mx-10 md:mx-0">
@@ -99,7 +99,7 @@ export default function Home() {
                                         <h2 class="mb-2 text-xl font-semibold text-gray-800 ">IIM Bangalore</h2>
                                         <span class="inline-block mb-6 text-base font-medium text-blue-500 ">MBA
                                         </span>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="w-full border-black p-2 rounded-xl shadow-xl px-4 mb-10 sm:w-1/2 lg:w-1/3 xl:w-1/6 md:mr-2 mx-10 md:mx-0">
@@ -112,7 +112,7 @@ export default function Home() {
                                         <h2 class="mb-2 text-xl font-semibold text-gray-800 ">NIT Karnataka</h2>
                                         <span class="inline-block mb-6 text-base font-medium text-blue-500 ">B Tech
                                         </span>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="w-full border-black p-2 rounded-xl shadow-xl px-4 mb-10 sm:w-1/2 lg:w-1/3 xl:w-1/6 md:mr-2 mx-10 md:mx-0">
@@ -125,7 +125,7 @@ export default function Home() {
                                         <h2 class="mb-2 text-xl font-semibold text-gray-800 ">IIT Delhi</h2>
                                         <span class="inline-block mb-6 text-base font-medium text-blue-500 ">B Tech
                                         </span>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="w-full border-black p-2 rounded-xl shadow-xl px-4 mb-10 sm:w-1/2 lg:w-1/3 xl:w-1/6 md:mr-2 mx-10 md:mx-0">
@@ -139,7 +139,7 @@ export default function Home() {
                                         <span
                                             class="inline-block mb-6 text-base font-medium text-blue-500 ">MBBS
                                         </span>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -354,9 +354,9 @@ export default function Home() {
                             </div>
                         </div> */}
 
-Welcome to Jain Consultancy, your go-to partner for NEET, JEE, and competitive exam success. Our expert team, comprising seasoned educators and advisors, offers personalized programs tailored to individual needs, ensuring a focused and effective approach. We pride ourselves on fostering a transparent and nurturing environment, instilling the confidence needed to excel in competitive exams.
+                                    Welcome to Jain Consultancy, your go-to partner for NEET, JEE, and competitive exam success. Our expert team, comprising seasoned educators and advisors, offers personalized programs tailored to individual needs, ensuring a focused and effective approach. We pride ourselves on fostering a transparent and nurturing environment, instilling the confidence needed to excel in competitive exams.
 
-At Jain Consultancy, we are not just educators; we are mentors on your journey to academic excellence. Join us for a concise and impactful preparation experience, where success becomes a reality.
+                                    At Jain Consultancy, we are not just educators; we are mentors on your journey to academic excellence. Join us for a concise and impactful preparation experience, where success becomes a reality.
                                     <button className=' rounded-md flex  px-2 mt-2 py-2 bg-blue-800 text-white hover:bg-blue-700 hover:tracking-wide transition-all' >Explore More About Us</button>
                                 </div>
                             </div>
@@ -422,7 +422,7 @@ At Jain Consultancy, we are not just educators; we are mentors on your journey t
                                                                         Initial Consultation
                                                                     </p>
                                                                     <p className='text-gray-700'>
-                                                                    Your journey has just begun, and we're excited to guide you towards your academic goals. Get ready for a transformative experience as we embark on this path together!.
+                                                                        Your journey has just begun, and we're excited to guide you towards your academic goals. Get ready for a transformative experience as we embark on this path together!.
                                                                     </p>
                                                                 </div>
 
@@ -464,8 +464,8 @@ At Jain Consultancy, we are not just educators; we are mentors on your journey t
                                                                             Shortlist
                                                                         </p>
                                                                         <p className='text-gray-700'>
-                                                                            
-Kudos on unlocking your Customized College Shortlist! Your unique path to success starts here, tailored to your aspirations. Get ready for an exciting academic journey ahead!
+
+                                                                            Kudos on unlocking your Customized College Shortlist! Your unique path to success starts here, tailored to your aspirations. Get ready for an exciting academic journey ahead!
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -506,8 +506,8 @@ Kudos on unlocking your Customized College Shortlist! Your unique path to succes
                                                                         Assistance
                                                                     </p>
                                                                     <p className='text-gray-700'>
-                                                                        
-Exciting news – your Application Assistance journey begins! Trust us to navigate the process, ensuring your applications shine. Let's make your academic dreams a reality together!
+
+                                                                        Exciting news – your Application Assistance journey begins! Trust us to navigate the process, ensuring your applications shine. Let's make your academic dreams a reality together!
                                                                     </p>
                                                                 </div>
 
@@ -548,7 +548,7 @@ Exciting news – your Application Assistance journey begins! Trust us to naviga
                                                                             Dream Collage
                                                                         </p>
                                                                         <p className=' text-white'>
-                                                                        Congrats on your dream college acceptance – your success is our pride! Thrive ahead with confidence!
+                                                                            Congrats on your dream college acceptance – your success is our pride! Thrive ahead with confidence!
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -595,50 +595,50 @@ Exciting news – your Application Assistance journey begins! Trust us to naviga
                                     <div class="px-6 py-8 bg-white rounded shadow ">
                                         <div class="flex items-center mb-4">
                                             <img class="object-cover w-16 h-16 rounded-full"
-                                                src="https://i.postimg.cc/bNyr5cJq/pexels-anastasia-shuraeva-5704720.jpg" alt="" />
+                                                src="https://res.cloudinary.com/dtyombve3/image/upload/v1707024372/indian-guy-student-university_255667-20341_giqghl.avif" alt="" />
                                             <div class="pl-4">
                                                 <p class="text-xl font-bold ">Arjun Sharma </p>
                                                 <p class="font-medium text-blue-600 ">DTU - BTech</p>
                                             </div>
                                         </div>
                                         <p class="mb-4 leading-loose text-gray-500 ">
-                                            
-Kudos to Jain Consultancy for guiding me to DTU! Their personalized support was key to my successful admission. Highly recommend their services for aspiring students.
+
+                                            Kudos to Jain Consultancy for guiding me to DTU! Their personalized support was key to my successful admission. Highly recommend their services for aspiring students.
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="w-full py-5 md:w-1/2 lg:w-1/3 md:px-5">
                                     <div class="px-6 py-8 bg-white rounded shadow ">
                                         <div class="flex items-center mb-4">
                                             <img class="object-cover w-16 h-16 rounded-full"
-                                                src="https://i.postimg.cc/q7pv50zT/pexels-edmond-dant-s-4342352.jpg" alt="" />
+                                                src="https://res.cloudinary.com/dtyombve3/image/upload/v1707024624/download_7_wqpvk8.jpg" alt="" />
                                             <div class="pl-4">
                                                 <p class="text-xl font-bold ">Aisha Kapoor</p>
                                                 <p class="font-medium text-blue-600 ">AIIMS Rishikesh - MBBS</p>
                                             </div>
                                         </div>
                                         <p class="mb-4 leading-loose text-gray-500 ">
-                                        Thanks to Jain Consultancy, I'm now at AIIMS Rishikesh! Their guidance was crucial, and I highly recommend their services for aspiring medical students. 
+                                            Thanks to Jain Consultancy, I'm now at AIIMS Rishikesh! Their guidance was crucial, and I highly recommend their services for aspiring medical students.
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="w-full py-5 md:w-1/2 lg:w-1/3 md:px-5">
                                     <div class="px-6 py-8 bg-white rounded shadow ">
                                         <div class="flex items-center mb-4">
                                             <img class="object-cover w-16 h-16 rounded-full"
-                                                src="https://i.postimg.cc/05hmHMx1/pexels-emmy-e-2381069.jpg" alt="" />
+                                                src="https://res.cloudinary.com/dtyombve3/image/upload/v1707024370/download_5_sbsm9w.jpg" alt="" />
                                             <div class="pl-4">
                                                 <p class="text-xl font-bold ">Siddharth Malhotra </p>
                                                 <p class="font-medium text-blue-600 ">VIT Vellore - BTech</p>
                                             </div>
                                         </div>
                                         <p class="mb-4 leading-loose text-gray-500 ">
-                                            
-Thanks to Jain Consultancy, I'm now at VIT Vellore! Their support was key to my admission success. Highly recommend for aspiring engineering students.
+
+                                            Thanks to Jain Consultancy, I'm now at VIT Vellore! Their support was key to my admission success. Highly recommend for aspiring engineering students.
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -647,51 +647,51 @@ Thanks to Jain Consultancy, I'm now at VIT Vellore! Their support was key to my 
                                     <div class="px-6 py-8 bg-white rounded shadow ">
                                         <div class="flex items-center mb-4">
                                             <img class="object-cover w-16 h-16 rounded-full"
-                                                src="https://i.postimg.cc/bNyr5cJq/pexels-anastasia-shuraeva-5704720.jpg" alt="" />
+                                                src="https://res.cloudinary.com/dtyombve3/image/upload/v1707024622/download_8_rhirk3.jpg" alt="" />
                                             <div class="pl-4">
                                                 <p class="text-xl font-bold ">Nandini VermaM </p>
                                                 <p class="font-medium text-blue-600 ">NMIMS - MBA</p>
                                             </div>
                                         </div>
                                         <p class="mb-4 leading-loose text-gray-500 ">
-                                        Thanks to Jain Consultancy, I'm now pursuing MBA at NMIMS! Their guidance was crucial for my admission success. Highly recommend .
+                                            Thanks to Jain Consultancy, I'm now pursuing MBA at NMIMS! Their guidance was crucial for my admission success. Highly recommend .
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="w-full py-5 md:w-1/2 lg:w-1/3 md:px-5">
                                     <div class="px-6 py-8 bg-white rounded shadow ">
                                         <div class="flex items-center mb-4">
                                             <img class="object-cover w-16 h-16 rounded-full"
-                                                src="https://i.postimg.cc/q7pv50zT/pexels-edmond-dant-s-4342352.jpg" alt="" />
+                                                src="https://res.cloudinary.com/dtyombve3/image/upload/v1707024620/images_ubeafl.jpg" alt="" />
                                             <div class="pl-4">
                                                 <p class="text-xl font-bold ">Ananya Singhania </p>
                                                 <p class="font-medium text-blue-600 ">DU SRCC</p>
                                             </div>
                                         </div>
                                         <p class="mb-4 leading-loose text-gray-500 ">
-                                            
-A huge shout-out to Jain Consultancy for steering me towards DU SRCC! Their personalized guidance and support were instrumental in securing my admission. 
+
+                                            A huge shout-out to Jain Consultancy for steering me towards DU SRCC! Their personalized guidance and support were instrumental in securing my admission.
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                                 <div class="w-full py-5 md:w-1/2 lg:w-1/3 md:px-5">
                                     <div class="px-6 py-8 bg-white rounded shadow ">
                                         <div class="flex items-center mb-4">
                                             <img class="object-cover w-16 h-16 rounded-full"
-                                                src="https://i.postimg.cc/05hmHMx1/pexels-emmy-e-2381069.jpg" alt="" />
+                                                src="https://res.cloudinary.com/dtyombve3/image/upload/v1707024364/download_6_rqhlbf.jpg" alt="" />
                                             <div class="pl-4">
-                                                <p class="text-xl font-bold ">Siddharth Malhotra</p>
+                                                <p class="text-xl font-bold ">Arjun Verma</p>
                                                 <p class="font-medium text-blue-600 ">BITS - Btech
-</p>
+                                                </p>
                                             </div>
                                         </div>
                                         <p class="mb-4 leading-loose text-gray-500 ">
-                                            
-Big thanks to Jain Consultancy for guiding my path to BITS for BTech! Their personalized support and expertise were instrumental in my admission success.
+
+                                            Big thanks to Jain Consultancy for guiding my path to BITS for BTech! Their personalized support and expertise were instrumental in my admission success.
                                         </p>
-                                        
+
                                     </div>
                                 </div>
                             </div>
