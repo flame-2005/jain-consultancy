@@ -103,7 +103,6 @@ const Navbar = () => {
         >
           <div className="flex justify-between lg:flex">
             <a className="p-2 text-2xl font-bold text-gray-700" href="#">
-              Logo
             </a>
             <button
               className="p-2 text-gray-700 rounded-md hover:text-blue-300 lg:hidden"
@@ -126,27 +125,27 @@ const Navbar = () => {
           </div>
           <ul className="px-4 text-left mt-7">
             <li class="pb-3">
-              <Link href="/" class="text-sm text-gray-700 hover:text-blue-400">
+              <Link href="/" onClick={() => setOpen(false)} class="text-sm text-gray-700 hover:text-blue-400">
                 Home
               </Link>
             </li>
             <li class="pb-3">
-              <Link href="/#about" class="text-sm text-gray-700 hover:text-blue-400">
+              <Link href="/#about" onClick={() => setOpen(false)} class="text-sm text-gray-700 hover:text-blue-400">
                 About us
               </Link>
             </li>
             <li class="pb-3">
-              <Link href="/#contact" class="text-sm text-gray-700 hover:text-blue-400">
+              <Link href="/#contact" onClick={() => setOpen(false)} class="text-sm text-gray-700 hover:text-blue-400">
                 Contact Us
               </Link>
             </li>
             <li class="pb-3">
-              <Link href="/blogs" class="text-sm text-gray-700 hover:text-blue-400">
+              <Link href="/blogs" onClick={() => setOpen(false)} class="text-sm text-gray-700 hover:text-blue-400">
                 Blog
               </Link>
             </li>
             <li class="pb-3">
-              <Link href="/percentilepredictor" class="text-sm text-gray-700 hover:text-blue-400">
+              <Link href="/percentilepredictor" onClick={() => setOpen(false)} class="text-sm text-gray-700 hover:text-blue-400">
                 Rank Predictor
               </Link>
             </li>
